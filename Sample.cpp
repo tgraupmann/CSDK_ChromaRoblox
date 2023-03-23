@@ -1304,6 +1304,24 @@ int main()
     return 0;
 }
 
+void ExportAnimation(const wchar_t* source, const wchar_t* destination)
+{
+	ChromaAnimationAPI::SaveAnimationName(source, destination);
+}
+
+void ExportAnimationSet(const wchar_t* source, const wchar_t* destination)
+{
+	wstring wSource = source;
+	wstring wDestination = destination;
+
+	ChromaAnimationAPI::SaveAnimationName((wSource+L"_ChromaLink.chroma").c_str(), (wDestination + L"_ChromaLink.chroma").c_str());
+	ChromaAnimationAPI::SaveAnimationName((wSource + L"_Headset.chroma").c_str(), (wDestination + L"_Headset.chroma").c_str());
+	ChromaAnimationAPI::SaveAnimationName((wSource + L"_Keyboard.chroma").c_str(), (wDestination + L"_Keyboard.chroma").c_str());
+	ChromaAnimationAPI::SaveAnimationName((wSource + L"_Keypad.chroma").c_str(), (wDestination + L"_Keypad.chroma").c_str());
+	ChromaAnimationAPI::SaveAnimationName((wSource + L"_Mouse.chroma").c_str(), (wDestination + L"_Mouse.chroma").c_str());
+	ChromaAnimationAPI::SaveAnimationName((wSource + L"_Mousepad.chroma").c_str(), (wDestination + L"_Mousepad.chroma").c_str());
+}
+
 void ExecuteEffect(bool supportsStreaming, BYTE platform)
 {
 	// get current time
@@ -1402,6 +1420,12 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect1Keypad();
         ShowEffect1Mousepad();
         ShowEffect1Mouse();
+		ExportAnimation(L"Animations/BlackAndWhiteRainbow_ChromaLink.chroma", L"Exports/Effect1_ChromaLink.chroma");
+		ExportAnimation(L"Animations/BlackAndWhiteRainbow_Headset.chroma", L"Exports/Effect1_Headset.chroma");
+		ExportAnimation(L"Animations/Blank_Keyboard.chroma", L"Exports/Effect1_Keyboard.chroma");
+		ExportAnimation(L"Animations/BlackAndWhiteRainbow_Keypad.chroma", L"Exports/Effect1_Keypad.chroma");
+		ExportAnimation(L"Animations/BlackAndWhiteRainbow_Mouse.chroma", L"Exports/Effect1_Mouse.chroma");
+		ExportAnimation(L"Animations/BlackAndWhiteRainbow_Mousepad.chroma", L"Exports/Effect1_Mousepad.chroma");
         break;
     case 2:
         ShowEffect2();
@@ -1410,6 +1434,7 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect2Keypad();
         ShowEffect2Mousepad();
         ShowEffect2Mouse();
+		ExportAnimationSet(L"GameSampleAnimations/Effect2", L"Exports/Effect2");
         break;
     case 3:
         ShowEffect3();
@@ -1418,6 +1443,7 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect3Keypad();
         ShowEffect3Mousepad();
         ShowEffect3Mouse();
+		ExportAnimationSet(L"GameSampleAnimations/Effect3", L"Exports/Effect3");
         break;
     case 4:
         ShowEffect4();
@@ -1426,6 +1452,7 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect4Keypad();
         ShowEffect4Mousepad();
         ShowEffect4Mouse();
+		ExportAnimationSet(L"GameSampleAnimations/Effect4", L"Exports/Effect4");
         break;
     case 5:
         ShowEffect5();
@@ -1434,6 +1461,7 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect5Keypad();
         ShowEffect5Mousepad();
         ShowEffect5Mouse();
+		ExportAnimationSet(L"GameSampleAnimations/Effect5", L"Exports/Effect5");
         break;
     case 6:
         ShowEffect6();
@@ -1442,6 +1470,7 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect6Keypad();
         ShowEffect6Mousepad();
         ShowEffect6Mouse();
+		ExportAnimationSet(L"GameSampleAnimations/Effect6", L"Exports/Effect6");
         break;
     case 7:
         ShowEffect7();
@@ -1450,6 +1479,7 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect7Keypad();
         ShowEffect7Mousepad();
         ShowEffect7Mouse();
+		ExportAnimationSet(L"GameSampleAnimations/Effect7", L"Exports/Effect7");
         break;
     case 8:
         ShowEffect8();
@@ -1458,6 +1488,7 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect8Keypad();
         ShowEffect8Mousepad();
         ShowEffect8Mouse();
+		ExportAnimationSet(L"GameSampleAnimations/Effect8", L"Exports/Effect8");
         break;
     case 9:
         ShowEffect9();
@@ -1466,6 +1497,7 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect9Keypad();
         ShowEffect9Mousepad();
         ShowEffect9Mouse();
+		ExportAnimationSet(L"GameSampleAnimations/Effect9", L"Exports/Effect9");
         break;
     case 10:
         ShowEffect10();
@@ -1474,6 +1506,7 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect10Keypad();
         ShowEffect10Mousepad();
         ShowEffect10Mouse();
+		ExportAnimationSet(L"GameSampleAnimations/Effect10", L"Exports/Effect10");
         break;
     case 11:
         ShowEffect11();
@@ -1482,6 +1515,7 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect11Keypad();
         ShowEffect11Mousepad();
         ShowEffect11Mouse();
+		ExportAnimationSet(L"GameSampleAnimations/Effect11", L"Exports/Effect11");
         break;
     case 12:
         ShowEffect12();
@@ -1490,6 +1524,7 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect12Keypad();
         ShowEffect12Mousepad();
         ShowEffect12Mouse();
+		ExportAnimationSet(L"GameSampleAnimations/Effect12", L"Exports/Effect12");
         break;
     case 13:
         ShowEffect13();
@@ -1498,6 +1533,7 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect13Keypad();
         ShowEffect13Mousepad();
         ShowEffect13Mouse();
+		ExportAnimationSet(L"GameSampleAnimations/Effect13", L"Exports/Effect13");
         break;
     case 14:
         ShowEffect14();
@@ -1506,6 +1542,7 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect14Keypad();
         ShowEffect14Mousepad();
         ShowEffect14Mouse();
+		ExportAnimationSet(L"GameSampleAnimations/Effect14", L"Exports/Effect14");
         break;
     case 15:
         ShowEffect15();
@@ -1514,6 +1551,7 @@ void ExecuteEffect(bool supportsStreaming, BYTE platform)
         ShowEffect15Keypad();
         ShowEffect15Mousepad();
         ShowEffect15Mouse();
+		ExportAnimationSet(L"GameSampleAnimations/Effect15", L"Exports/Effect15");
         break;
 	}
 
