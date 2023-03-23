@@ -47,7 +47,6 @@ void ShowEffect1()
 	ChromaAnimationAPI::SetKeysColorAllFramesName(baseLayer, keys, (int)size(keys), color);
 	ChromaAnimationAPI::FillZeroColorAllFramesRGBName(baseLayer, 32, 0, 32);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
@@ -123,7 +122,6 @@ void ShowEffect2()
 	ChromaAnimationAPI::GetAnimation(baseLayer);
 	ChromaAnimationAPI::ReduceFramesName(baseLayer, 2);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
@@ -179,7 +177,6 @@ void ShowEffect3()
 	ChromaAnimationAPI::GetAnimation(baseLayer);
 	ChromaAnimationAPI::ReduceFramesName(baseLayer, 2);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
@@ -234,7 +231,6 @@ void ShowEffect4()
 	ChromaAnimationAPI::CloseAnimationName(baseLayer);
 	ChromaAnimationAPI::GetAnimation(baseLayer);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
@@ -285,7 +281,6 @@ void ShowEffect5()
 	ChromaAnimationAPI::GetAnimation(baseLayer);
 	ChromaAnimationAPI::ReduceFramesName(baseLayer, 2);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
@@ -343,7 +338,6 @@ void ShowEffect6()
 	int color = ChromaAnimationAPI::GetRGB(182, 133, 255);
 	ChromaAnimationAPI::MultiplyIntensityColorAllFramesName(baseLayer, color);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
@@ -410,7 +404,6 @@ void ShowEffect7()
 	ChromaAnimationAPI::ReduceFramesName(baseLayer, 2);
 	ChromaAnimationAPI::ReduceFramesName(baseLayer, 2);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
@@ -470,7 +463,6 @@ void ShowEffect8()
 	ChromaAnimationAPI::CloseAnimationName(baseLayer);
 	ChromaAnimationAPI::GetAnimation(baseLayer);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
@@ -519,7 +511,6 @@ void ShowEffect9()
 	ChromaAnimationAPI::CloseAnimationName(baseLayer);
 	ChromaAnimationAPI::GetAnimation(baseLayer);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
@@ -569,7 +560,6 @@ void ShowEffect10()
 	ChromaAnimationAPI::CloseAnimationName(baseLayer);
 	ChromaAnimationAPI::GetAnimation(baseLayer);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
@@ -623,7 +613,6 @@ void ShowEffect11()
 	int color2 = ChromaAnimationAPI::GetRGB(255, 255, 0);
 	ChromaAnimationAPI::MultiplyTargetColorLerpAllFramesName(baseLayer, color1, color2);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
@@ -693,7 +682,6 @@ void ShowEffect12()
 	ChromaAnimationAPI::CloseAnimationName(baseLayer);
 	ChromaAnimationAPI::GetAnimation(baseLayer);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
@@ -747,7 +735,6 @@ void ShowEffect13()
 	int color2 = ChromaAnimationAPI::GetRGB(204, 204, 0);
 	ChromaAnimationAPI::MultiplyTargetColorLerpAllFramesName(baseLayer, color1, color2);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
@@ -817,7 +804,6 @@ void ShowEffect14()
 	ChromaAnimationAPI::CloseAnimationName(baseLayer);
 	ChromaAnimationAPI::GetAnimation(baseLayer);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
@@ -867,7 +853,6 @@ void ShowEffect15()
 	ChromaAnimationAPI::CloseAnimationName(baseLayer);
 	ChromaAnimationAPI::GetAnimation(baseLayer);
 	ChromaAnimationAPI::SetChromaCustomFlagName(baseLayer, true);
-	ChromaAnimationAPI::SetChromaCustomColorAllFramesName(baseLayer);
 	ChromaAnimationAPI::OverrideFrameDurationName(baseLayer, 0.033f);
 	ChromaAnimationAPI::PlayAnimationName(baseLayer, true);
 }
